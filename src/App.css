@@ -1,6 +1,38 @@
 .App {
   text-align: center;
 }
+.chat-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr, 25% auto, 1fr;
+  grid-template-rows: 50px, auto;
+}
+
+.menu {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.menu-item {
+  display: inline;
+  padding: 5px;
+}
+
+.chat-list {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.active-chat {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
